@@ -1,0 +1,92 @@
+body {
+    &.sticky-head {
+        padding-top: 80px;
+        .header {
+            position: fixed;
+            background: #fff;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 999;
+            border-radius: 0;
+        }
+    }
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+.text-thin {
+    font-weight: 200;
+}
+.text-light {
+    font-weight: 300;
+}
+.text-normal {
+    font-weight: 400;
+}
+.text-semibold {
+    font-weight: 600;
+}
+.text-bold {
+    font-weight: 700;
+}
+
+.text-color {
+    color: $text-color;
+}
+.text-3forcom {
+    color: $brand-3forcom;
+}
+
+figure {
+    figcaption {
+        font-size: (12/14)*1em;
+        color: #999;
+        font-style: italic;
+        margin-top: (20/14)*1em;
+        text-align: center;
+    }
+}
+
+// Responsive
+
+@media (max-width: 1199px) {
+    body {
+        font-size: 13px;
+        &.sticky-head{
+            padding-top: 60px;
+        }
+    }
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+        > [class*="col-"] {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+}
+@media (max-width: 479px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    } 
+    .row {
+        margin-left: -5px;
+        margin-right: -5px;
+        > [class*="col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }  
+}

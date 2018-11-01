@@ -1,0 +1,46 @@
+#searchModal {
+    .close {
+        color: #fff;
+        position: absolute;
+        top: (27/45)*1em;
+        right: (40/45)*1em;
+        font-size: (45/14)*1em;
+        line-height: 1;
+        @include opacity(1);
+    }
+    .modal-dialog {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0;
+        @include translate(-50%, -60%);
+        .modal-content {
+            border: none;
+            background: none;
+            padding: 0;
+            @include box-shadow(none);
+        }
+        .form-control {
+            font-size: (60/14) * 1em;
+            padding: 0;
+            color: #fff;
+            border: none;
+            background: none;
+            outline: none !important;
+            height: auto;
+            @include box-shadow(none);
+            @include placeholder(rgba(#fff, 0.9));
+        }
+    }
+    ~ .modal-backdrop {
+        &.fade.in {
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            top: 15px;
+            background-color: $brand-primary;
+            @include opacity(0.9);
+            @include gradient(to right, #018445, #779d4a);
+        }
+    }
+}

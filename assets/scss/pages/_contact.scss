@@ -1,0 +1,226 @@
+.section-contactForm {
+    padding: 65px 0;
+    .heading {
+        margin-bottom: 55px;
+    }
+    .form {
+        &__head {
+            font-size: (24/14) * 1em;
+            font-weight: 300;
+            color: $text-color;
+            margin-bottom: 22px;
+            margin-top: 25px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        .dropzone {
+            min-height: 164px;
+        }
+        .checkbox,
+        .radio {
+            margin: 0;
+            label {
+                padding: 0;
+                display: block;
+                > span {
+                    display: block;
+                    padding: (8/16)*1em;
+                    padding-left: (60/16)*1em;;
+                    line-height: 1.4;
+                    font-size: (16/14)*1em;
+                    border: 1px solid #ebebeb;
+                    border-radius: 20px;
+                    color: #333;
+                    position: relative;
+                    &:before {
+                        font-family: 'ElegantIcons';
+                        content: "\52";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        line-height: (40/24) * 1em;
+                        font-size: (24/16)*1em;
+                        color: #ebebeb;
+                    }
+                }
+                input:checked + span{
+                    background-color: $brand-3forcom;
+                    border-color: $brand-3forcom;
+                    &,
+                    &:before {
+                        color: #fff;
+                    }
+                }
+            }
+            input {
+                visibility: hidden;
+                @include opacity(0);
+            }
+        }
+    }
+    .form-group {
+        &.text-center {
+            margin-top: 66px;
+            margin-bottom: 0;
+            .btn {
+                $padding: 33px;
+                padding-left: $padding;
+                padding-right: $padding;
+            }
+        }
+    }
+}
+
+.section-contactInfo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contactInfo {
+        padding: 70px 0;
+        color: #fff;
+        &__item {
+            text-align: center;
+            &__inner {
+                margin: 0 auto;
+                display: table;
+                position: relative;
+                vertical-align: middle;
+                width: 25em;
+
+                > * {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+            i {
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                &.ic-mail{
+                    background-image: url('/assets/images/icons/ic-mail.svg');
+                    width: (73/14)*1em;
+                    height: (63/14)*1em;
+                }
+                &.ic-location{
+                    background-image: url('/assets/images/icons/ic-location.svg');
+                    width: (51/14)*1em;
+                    height: (60/14)*1em;
+                }
+                &.ic-call{
+                    background-image: url('/assets/images/icons/ic-call.svg');
+                    width: (57/14)*1em;
+                    height: (57/14)*1em;
+                }
+            }
+            span {
+                text-align: left;
+                padding-left: 20px;
+                // @include translate(0, -50%);
+            }
+        }
+    }
+    .row > div {
+        &:first-child {
+            > div > div{
+                margin-left: 0;
+            }
+        }
+        &:last-child {
+            > div > div{
+                margin-right: 0;
+                width: ( 230/14 )*1em;
+            }
+        }
+    }
+}
+
+// Responsive 
+    @media (max-width: 991px){
+        .section-contactInfo {
+            .contactInfo {
+                padding: 60px 0;
+                &__item {
+                    &__inner {
+                        width: 100%;
+                    }
+                    i {
+                        font-size: (11/13)*1em;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px){
+        .section-contactForm {
+            padding: 40px 0;
+            .form-group {
+                &.text-center {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .section-contactInfo {
+            .contactInfo {
+                padding: 50px 0;
+                &__item {
+                    &__inner {
+                        width: 310px;
+                        margin: 30px auto !important;
+                    }
+                    i {
+                        font-size: (11/13)*1em;
+                        &.ic-mail {
+                            font-size: (8.5/13)*1em;
+                        }
+                    }
+                }
+                .row > div {
+                    &:last-child {
+                        > div > div{
+                            width:310px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 479px){
+        .section-contactForm .form .checkbox label > span {
+            font-size: 1em;
+        }
+        .section-contactInfo {
+            .contactInfo {
+                padding: 30px 0;
+                &__item {
+                    &__inner {
+                        width: 100%;
+                        display: block;
+                        margin: 30px 0;
+                    }
+                    i {
+                        display: block;
+                        margin: 0 auto 10px;
+                        &,
+                        &.ic-mail {
+                            font-size: (10/13)*1em;
+                        }
+                    }
+                    span {
+                        padding: 0 15px;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                .row > div {
+                    &:last-child {
+                        > div > div{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,92 @@
+
+@mixin gradient ($origin: left, $start: #ffffff, $stop: #000000) {
+  background-color: $start;
+  background-image: -webkit-linear-gradient($origin, $start, $stop);
+  background-image: -moz-linear-gradient($origin, $start, $stop);
+  background-image: -o-linear-gradient($origin, $start, $stop);
+  background-image: -ms-linear-gradient($origin, $start, $stop);
+  background-image: linear-gradient($origin, $start, $stop);
+}
+
+@mixin filter ($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+"("+$filter-amount +")";
+  -moz-filter: $filter-type+"("+$filter-amount +")";
+  -ms-filter: $filter-type+"("+$filter-amount +")";
+  -o-filter: $filter-type+"("+$filter-amount +")";
+  filter: $filter-type+"("+$filter-amount +")";
+}
+@mixin gradient-text($gradient, $bg : 'light') {
+  @supports(mix-blend-mode: lighten) {
+    display: inline-block;
+    position: relative;
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      
+      background: unquote($gradient);
+      pointer-events: none;
+    }
+
+    @if ($bg == 'light') {
+      color: #000;
+      background: #fff;
+      mix-blend-mode: multiply;
+
+      &::before {
+        mix-blend-mode: screen;
+      }
+    } @else {
+      color: #fff;
+      background: #000;
+      mix-blend-mode: lighten;
+
+      &::before {
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}
+
+
+@mixin bg-box($width: 1, $height: 1) {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    padding-top: ($height/$width) * 100%;
+    display: block;
+    height: 0;
+  }
+  img {
+    display: none;
+  }
+}
+
+@mixin positionG($top, $left, $width, $wG, $hG) {
+  top: ($top/$hG) * 100%;
+  left: ($left/$wG) * 100%;
+  width: ($width/$wG) * 100%;
+}
+
+@mixin ic-svg($wG, $hG, $src) {
+  display: inline-block;
+  background-image: url($src);
+  width: $wG*1px;
+  max-width: ($wG/14)*1em;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: ($hG/$wG)*100%;
+  }
+}
+@mixin ic-svg-before($wG, $hG, $src) {
+  background-image: url('/assets/images/icons/' + $src );
+  width: ($wG/14)*1em;
+  height: ($hG/14)*1em;
+}

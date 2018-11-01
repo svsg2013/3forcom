@@ -1,0 +1,116 @@
+.successfully-page {
+    &.sticky-head {
+        padding: 0;
+        .header {
+            position: absolute;
+            padding-top: 22px;
+            text-align: center;
+            background-color: transparent;
+            @include box-shadow(none);
+            &__logo {
+                display: inline-block;
+            }
+        }
+    }
+
+    .section-subheader {
+        padding: 175px 0 95px;
+        &--down:before, 
+        &--down:after {
+            background-color: #f1f6fa;
+        }
+    }
+
+    .section-business {
+        background-color: #f1f6fa;
+        margin: 0;
+        padding-top: 30px;
+        &__background,
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.successfully {
+    i {
+        display: block;
+        margin: 0 auto 40px;
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        &:before {
+            width: (85/68)*100%;
+            height: (85/68)*100%;
+            border: 4px solid rgba(#fff, 0.2);
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            @include translate(-50%, -50%);
+        }
+        &:after {
+            width: (45/68)*100%;
+            height: (37/68)*100%;
+            top: (15/68)*100%;
+            left: (12/68)*100%;
+            background: url('/assets/images/icons/ic-check.svg') no-repeat center;
+            background-size: 100%;
+        }
+    }
+
+    h1,
+    h2 {
+        font-weight: 300;
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+    h2 {
+        font-size: 18px;
+        margin-bottom: 65px;
+        a {
+            font-weight: 700;
+            color: $brand-3forcom;
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .successfully-page {
+        .section-subheader {
+            padding: 135px 0 55px;
+        }
+    }
+
+    .successfully {
+        i {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 35px;
+        }
+        h1, 
+        h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        h2 {
+            font-size: 14px;
+            margin-bottom: 45px;
+        }
+    }
+}

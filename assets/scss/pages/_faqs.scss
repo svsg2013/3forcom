@@ -1,0 +1,402 @@
+.faqsSearch {
+    margin-top: 45px;
+    h3 {
+        font-size: (24/14) * 1em;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 22px;
+    }
+    &__control {
+        border: none;
+        background-color: rgba(#fff, 0.8);
+        border-radius: 4px;
+        padding: 14px 27px;
+        font-size: (16/14) * 1em;
+        color: $brand-3forcom;
+        font-weight: 400;
+        width: 570px;
+        outline: none !important;
+        max-width: 100%;
+        @include placeholder(#999);
+    }
+    &__btn {
+        text-transform: uppercase;
+        padding: 15px 25px;
+        background-color: $brand-3forcom;
+        color: #fff;
+        border-radius: 25px;
+        border: none;
+        outline: none !important;
+        margin-left: 30px;
+        @include transition(all 0.2s ease-in-out);
+        &:hover {
+            background-color: darken($brand-3forcom, 10%);
+        }
+    }
+}
+
+.section-faqs {
+    padding-top: 56px;
+    background-color: #f2f2f2;
+    background-image: url('/assets/images/faqs-content-bg.jpg');
+    background-position: top center;
+    position: relative;
+    &__bg {
+        position: absolute !important;
+        left: 0;
+        right: 50%;
+        top: -32px;
+        height: 300px;
+        z-index: 0;
+        background-color: #f2f2f2;
+        overflow: hidden;
+        @include skew(0deg,3.7deg);
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -32px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-image: url('/assets/images/faqs-content-bg-left.jpg');
+            background-position: top right;
+            @include skew(0deg,-3.7deg);
+            
+        }
+        &--right {
+            left: 50%;
+            margin-left: -1px;
+            right: 0;
+            @include skew(0deg,-3.7deg);
+            &:before{
+                background-image: url('/assets/images/faqs-content-bg-right.jpg');
+                background-position: top left;
+                @include skew(0deg,3.7deg);
+            }
+        }
+    }
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+    .nav {
+        &-tabs{
+            display: block;
+            width: 100%;
+            border: none;
+            position: relative;
+            z-index: 1;
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            > li {
+                width: 30%;
+                float: left;
+                margin: 0;
+                > a {
+                    display: block;
+                    border: 1px solid #f1f1f1;
+                    border-width: 1px 1px 1px 0;
+                    padding: 0;
+                    margin: 0;
+                    background-color: #f8f8f8;
+                    font-size: (24/14) * 1em;
+                    line-height: (30/24);
+                    font-weight: 300;
+                    color: #999;
+                    text-align: center;
+                    padding: (33/24)*1em 0;
+                    border-radius: 0;
+                    position: relative;
+                    > * {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    i {
+                        font-size: (30/24) * 1em;
+                        line-height: 1;
+                        margin-right: (28/30) * 1em;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: 1px;
+                        left: 50%;
+                        margin-left: -(17/24)* 1em;
+                        border-style: solid;
+                        border-width: (12/24)* 1em (17/24)* 1em 0 (17/24)* 1em;
+                        border-color: #f8f8f8 transparent;
+                        @include transition(all 0.2s ease-in-out);
+                    }
+                }
+                &:last-child{
+                    width: 40%;
+                }
+                &:first-child > a{
+                    border-left: 1px solid #f1f1f1;
+                }
+                &.active {
+                    > a {
+                        &,
+                        &:hover,
+                        &:focus {
+                            background-color: $brand-primary;
+                            color: #fff;
+                            border: 1px solid $brand-primary;
+                            border-width: 1px 1px 1px 0;
+                            &:after {
+                                margin-bottom: -(12/24)* 1em;
+                                border-color: $brand-primary transparent;
+                            }
+                        }
+                    }
+                    &:first-child > a{
+                        border-left: 1px solid $brand-primary;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        position: relative;
+        z-index: 0;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -2000px;
+            right: -2000px;
+            display: block;
+            z-index: 0;
+            background-color: #f8f8f8;
+        }
+        .tab-pane {
+            padding: 55px 0 85px;
+            position: relative;
+            z-index: 1;
+            &.active {
+
+            }
+            .panel-group {
+                .panel {
+                    border: none;
+                    background: none;
+                    @include box-shadow(none);
+                    &-heading {
+                        padding: 0;
+                        border: none;
+                        position: relative;
+                        padding-bottom: 2px;
+                        &:after {
+                            content: "";
+                            display: block;
+                            border-bottom: 1px solid #e1e1e1;
+                            position: absolute;
+                            bottom: 1px;
+                            left: 5px;
+                            right: 0;
+                        }
+                    }
+                    &-title {
+                        font-size: (18/14) * 1em;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        a {
+                            $paddingLink: (10/18) * 1em;
+                            display: block;
+                            padding: $paddingLink (40/18) * 1em $paddingLink (62/18) * 1em;
+                            position: relative;
+                            color: $brand-3forcom;
+                            &:before {
+                                content: "Q";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: block;
+                                width: (45/18) * 1em;
+                                height: (45/18) * 1em;
+                                border-radius: 6px;
+                                text-align: center;
+                                line-height: (45/18) * 1em;
+                                font-weight: 400;
+                                background-color: $brand-3forcom;
+                                color: #fff;
+                                @include transition(all 0.2s ease-in-out);
+                            }
+                            &:after {
+                                content: "\4b";
+                                font-family: 'ElegantIcons';
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                display: block;
+                                width: (40/18) * 1em;;
+                                height: (45/18) * 1em;;
+                                line-height: (45/18) * 1em;;
+                                text-align: center;
+                                font-size: (16/18) * 1em;
+                                color: $brand-3forcom;
+                            }
+                            &.collapsed {
+                                font-weight: 300;
+                                color: #333;
+                                &:before {
+                                    color:  $brand-3forcom;
+                                    background-color: #e3e3e3;
+                                }
+                                &:after {
+                                    content: "\4c";
+                                }
+                            }
+                        }
+                    }
+                    &-collapse {
+                        &.in {}
+                        &.collapse {}
+                    }
+                    &-body {
+                        padding: (20/14)*1em 50px (20/14)*1em (18/14)*1em;
+                        border: none;
+                        line-height: (28/14);
+                    }
+                    + .panel {
+                        margin-top: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1499px) {
+    .section-faqs {
+        .nav {
+            &-tabs{
+               font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .section-faqs {
+        .nav {
+            &-tabs{
+               font-size: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .section-faqs {
+        .nav {
+            &-tabs{
+               font-size: 8px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .section-faqs {
+        padding-top: 25px;
+        .nav {
+            &-tabs{
+               font-size: 7.5px;
+               > li > a {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 1em;
+                    i {
+                        display: inline-block;
+                        margin: 0;
+                    }
+                    span {
+                        display: block;
+                        margin-top: 10px;
+                        max-width: 150px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        min-height: 34px;
+                    }
+               }
+            }
+        }
+        .tab-content .tab-pane {
+            padding: 35px 0 35px;
+            .panel-group .panel-body {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 479px) {
+    .section-faqs {
+        padding-top: 25px;
+        .nav {
+            &-tabs{
+               font-size: 7px;
+               > li > a {
+                    span {
+                        min-height: 50px;
+                    }
+               }
+            }
+        }
+    }
+}
+@media (max-width: 439px) {
+    .faqsSearch {
+        margin-top: 25px;
+        h3 {
+            font-size: (20/13) * 1em;
+            margin-bottom: 18px;
+        }
+        &__control {
+            padding: 12px 27px;
+            font-size: 1em;
+        }
+        &__btn {
+            padding: 12px 25px;
+        }
+    }
+    .section-faqs {
+        padding-top: 0;
+        min-height: 38px;
+        .tab-content .tab-pane {
+            padding: 30px 0 15px;
+            .panel-group .panel-body {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .section-faqs {
+        .nav {
+            &-tabs{
+               font-size: 6px;
+               > li > a {
+                    span {
+                        min-height: 36px;
+                    }
+               }
+            }
+        }
+        .tab-content .tab-pane .panel-group .panel-title{
+            font-size: 1.1em;
+             a {
+                padding-top: 0;
+                &:before {
+                    top: 2px;
+                }
+            }
+        }
+    }
+}

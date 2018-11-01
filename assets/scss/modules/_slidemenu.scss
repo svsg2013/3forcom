@@ -1,0 +1,139 @@
+.slideMenu {
+    background-color: #f6f6f6;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 375px;
+    max-width: 100%;
+    z-index: 998;
+    padding-top: 80px;
+    @include box-shadow(-3px 7px 7px rgba(#000,0.1));
+    @include translate(110%,0);
+    @include transition(all 0.2s ease-in-out);
+
+    &__inner {
+        overflow: hidden;
+        overflow-y: auto;
+        padding: 25px 35px;
+        max-height: 100%;
+    }
+    &__nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        > li {
+            position: relative;
+            .showChild {
+                position: absolute;
+                display: block;
+                top: 0;
+                height: 40px;
+                right: 0;
+                width: 40px;
+                cursor: pointer;
+                @include transition(all 0.2s ease-in-out);
+
+                &:before,
+                &:after {
+                    content: "";
+                    display: block;
+                    background-color: $brand-3forcom;
+                    position: absolute;
+                    top: 50%;
+                    @include transition(all 0.2s ease-in-out);
+                }
+                &:before {
+                    width: 1px;
+                    height: 9px;
+                    margin-top: -4px;
+                    right: 9px;
+                }
+                &:after {
+                    width: 9px;
+                    height: 1px;
+                    right: 5px;
+                }
+                &:hover {
+                    &:before,
+                    &:after {
+                        background-color: $brand-primary;
+                    }
+                }
+            }
+            > a {
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #5d5d5d;
+                display: inline-block;
+                padding: 9px 0;
+                &:hover{
+                    color: $brand-3forcom;
+                }
+            }
+            + li {
+                border-top: 1px solid #edecec;
+            }
+
+            > .sub {
+                display: none;
+                list-style: none;
+                margin: 0;
+                padding: 10px 0 20px 14px;
+                a {
+                    color: $text-color;
+                    &:hover {
+                        color: $brand-3forcom;
+                    }
+                }
+                 li {
+                    &.active a{
+                        color: $brand-3forcom;
+                    }
+                    + li {
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $brand-3forcom;
+                }
+                .showChild{
+                    &:before,
+                    &:after {
+                        @include rotate(45deg);
+                    }
+                }
+            }
+            &.active-child {
+                > .sub {
+                    display: block;
+                }
+            }
+        }
+    }
+    &.show {
+        @include translate(0,0);
+    }
+    @media (max-width: 1199px) {
+        padding-top: 59px;
+        &__nav li .showChild{
+            height: 36px;
+        }
+    }
+    @media(max-width: 768px) {
+        &__inner{
+            padding-bottom: 85px;
+        }
+    }
+    @media (max-width: 479px) { 
+        width: 100%;
+    }
+}
+@media (max-width: 479px) { 
+    .show-slideMenu {
+        overflow: hidden;
+    }
+}
