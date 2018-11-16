@@ -719,7 +719,7 @@ if ($('.select').length) {
 $("#duration").ionRangeSlider({
     grid: true,
     from: 2,
-    values: ["3 개월", "6 개월", "9 개월", "12 개월", "15 개월", "18 개월"],
+    values: ["3 months", "6 months", "9 months", "12 months", "15 months", "18 months"],
     hide_min_max: true,
     hide_from_to: true
 });
