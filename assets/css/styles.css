@@ -17999,16 +17999,22 @@ body.loading .fc-loading {
   transform: rotate(-5.6deg);
 }
 
-.slideMain,
-.slideMain + .section-slide__bottom {
-  display: none;
+.slideMain {
+    position: relative;
 }
-
-.slideMain.slick-slider,
-.slideMain.slick-slider + .section-slide__bottom {
-  display: block;
+.slideMain > .slideMain__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
 }
-
+.slideMain > .slideMain__item:first-child {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
 .slideMain__item {
   background-size: cover;
   background-position: top center;
