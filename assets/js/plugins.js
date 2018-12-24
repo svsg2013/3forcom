@@ -1067,7 +1067,7 @@ String.prototype.removeAccents=function(e){return e?this.replace(/[áàãâä]/g
       renameFilename: null,
       renameFile: null,
       forceFallback: false,
-      dictDefaultMessage: "이력서/포트폴리오를 업로드 해주세요",
+      dictDefaultMessage: "기획서/제안요청서를 업로드 해주세요",
       dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
       dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
       dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
