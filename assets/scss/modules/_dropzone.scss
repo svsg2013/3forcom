@@ -48,8 +48,8 @@
     }
 
     .dropzone.dz-drag-hover {
-		border-color: $brand-3forcom;
-		background-color: rgba($brand-3forcom, 0.1);
+		border-color: $brand-Brickmate;
+		background-color: rgba($brand-Brickmate, 0.1);
     }
     .dropzone .dz-preview,
     .dropzone-previews .dz-preview {
@@ -158,7 +158,7 @@
 		background: rgba(245,245,245,0.8);
 		padding: 8px 10px;
 		font-size: (12/14)*1em;
-		color: $brand-3forcom;
+		color: $brand-Brickmate;
 		z-index: 500;
 		max-height: 60%;
 		overflow: hidden;
@@ -313,7 +313,7 @@
 		font-size: 12px;
 		text-transform: uppercase;
 		&:hover {
-			background-color: $brand-3forcom;
+			background-color: $brand-Brickmate;
 			color: #fff;
 		}
     }

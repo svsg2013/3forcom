@@ -137,7 +137,7 @@
             bottom: 0;
             left: 0;
             z-index: 1;
-            background-color: $brand-3forcom;
+            background-color: $brand-Brickmate;
             visibility: hidden;
             @include opacity(0);
             @include transition(all 0.2s ease-in-out);
@@ -273,7 +273,7 @@
                 right: 10px;
                 font-size: (45/14)*1em;
                 font-weight: 400;
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 margin: 0;
                 line-height: 1;
                 @include translate(0 , -50%);
@@ -447,9 +447,9 @@
         line-height: 1.4;
         max-width: 876px;
         margin: 0 auto (26/14)*1em;
-        &.text-3forcom {
+        &.text-Brickmate {
             max-width: 920px;
-            color: $brand-3forcom;
+            color: $brand-Brickmate;
         }
         &.text-white {
             max-width: 920px;

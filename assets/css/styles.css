@@ -7302,7 +7302,7 @@ body.sticky-head .header {
   color: #666;
 }
 
-.text-3forcom {
+.text-Brickmate {
   color: #f05b28;
 }
 
@@ -15107,11 +15107,11 @@ you can use the generic selector below, but it's slower:
   background-color: #f05b28;
 }
 
-.section-cta--career .section-cta__inner a.btn.btn-3forcom {
+.section-cta--career .section-cta__inner a.btn.btn-Brickmate {
   background-color: #f05b28;
 }
 
-.section-cta--career .section-cta__inner a.btn.btn-3forcom:hover {
+.section-cta--career .section-cta__inner a.btn.btn-Brickmate:hover {
   background-color: #1794d5;
 }
 
@@ -25224,7 +25224,7 @@ body.loading .fc-loading {
   margin: 0 auto 1.85714286em;
 }
 
-.section-ServiceBanner h2.text-3forcom {
+.section-ServiceBanner h2.text-Brickmate {
   max-width: 920px;
   color: #f05b28;
 }

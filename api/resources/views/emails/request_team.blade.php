@@ -10,7 +10,7 @@
 <body>
 <div style="background-color: #fafafa;">
     <div>
-        <p>We have received one received message via "Send Us Your Request" form on website <a href="http://3forcom.com" target="_blank" title="3forcom.com">3forcom.com</a></p>
+        <p>We have received one received message via "Send Us Your Request" form on website <a href="http://Brickmate.com" target="_blank" title="Brickmate.com">Brickmate.com</a></p>
         
         <p>Please find details below:</p>
 

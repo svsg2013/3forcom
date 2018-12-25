@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'noreply@3forcom.com'),
-        'name' => env('MAIL_FROM_NAME', '3Forcom Customer Service'),
+        'address' => env('MAIL_FROM_ADDRESS', 'noreply@Brickmate.com'),
+        'name' => env('MAIL_FROM_NAME', 'Brickmate Customer Service'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'noreply@3forcom.com'),
+    'username' => env('MAIL_USERNAME', 'noreply@Brickmate.com'),
 
-    'password' => env('MAIL_PASSWORD', '3forcommaugiau@1234'),
+    'password' => env('MAIL_PASSWORD', 'Brickmatemaugiau@1234'),
 
     /*
     |--------------------------------------------------------------------------

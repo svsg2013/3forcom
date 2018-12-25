@@ -35,7 +35,7 @@
             a {
                 color: $text-color;
                 &:hover {
-                    color: $brand-3forcom;
+                    color: $brand-Brickmate;
                 }
             }
             + li {
@@ -45,7 +45,7 @@
     }
 }
 .footer {
-    background: $brand-3forcom;   
+    background: $brand-Brickmate;
     font-size: (16/14) * 1em;
     position: relative;
 
@@ -141,7 +141,7 @@
                 height: 37px;
                 text-align: center;
                 line-height: 37px;
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 background-color: rgba(#fff, 0.56);
                 border-radius: 50%;
                 &:not(:last-child) {
@@ -168,7 +168,7 @@
         width: (70/21) * 1em;
         height: (70/21) * 1em;
         border-radius: 50%;
-        @include box-shadow(0 0 0 2px rgba($brand-3forcom, 0.05));
+        @include box-shadow(0 0 0 2px rgba($brand-Brickmate, 0.05));
         @include transition(box-shadow 0.2s ease-in-out);
         i {
             position: absolute;
@@ -176,7 +176,7 @@
             height: (64/21) * 1em;
             top: 50%;
             left: 50%;
-            border: 1px solid rgba($brand-3forcom, 0.2);
+            border: 1px solid rgba($brand-Brickmate, 0.2);
             border-radius: 50%;
             @include box-shadow(0 0 0 4px rgba(#fff, 0.7));
             @include translate(-50%, -50%);
@@ -187,7 +187,7 @@
                 display: block;
                 width: (50/21) * 1em;
                 height: (50/21) * 1em;
-                background-color: $brand-3forcom;
+                background-color: $brand-Brickmate;
                 color: #fff;
                 border-radius: 50%;
                 line-height: (52/21) * 1em;
@@ -197,7 +197,7 @@
             }
         }
         &:hover {
-            @include box-shadow(0 0 0 10px rgba($brand-3forcom, 0.1));
+            @include box-shadow(0 0 0 10px rgba($brand-Brickmate, 0.1));
             i:before {
                 background-color: $brand-primary;
             }

@@ -548,13 +548,13 @@
                 }
 
                 + .boxCaseStudies__item__btn {
-                    background-color: $brand-3forcom;
+                    background-color: $brand-Brickmate;
                     &:hover,
                     &:active,
                     &:focus {
                         color: #fff;
-                        background-color: darken($brand-3forcom, 14%);
-                        border-color: darken($brand-3forcom, 14%);
+                        background-color: darken($brand-Brickmate, 14%);
+                        border-color: darken($brand-Brickmate, 14%);
                     }
                 }
             }
@@ -640,7 +640,7 @@
             margin-top: 35px;
             a {
                 font-size: (16/14) * 1em;
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 text-transform: uppercase;
                 i {
                     margin-right: 10px;
@@ -700,7 +700,7 @@
         > div {
             width: 18px;
             height: 18px;
-            background-color: $brand-3forcom;
+            background-color: $brand-Brickmate;
             border-radius: 100%;
             display: inline-block;
             -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -774,7 +774,7 @@
         }
         &:after {
             bottom: 2px;
-            background-color: $brand-3forcom;
+            background-color: $brand-Brickmate;
             @include transition-delay(0.7s);
         }
         &.active {

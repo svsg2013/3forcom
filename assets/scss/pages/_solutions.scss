@@ -9,7 +9,7 @@
                 display: block;
                 height: 2px;
                 width: 100px;
-                background-color: $brand-3forcom;
+                background-color: $brand-Brickmate;
                 margin: 40px auto 0;
                 position: relative;
                 z-index: 1;
@@ -116,7 +116,7 @@
             margin-left: 10px;
             margin-right: 10px;
             &:hover {
-                background-color: $brand-3forcom;
+                background-color: $brand-Brickmate;
             }
             @media (max-width: 439px) {
                 margin-top: 20px;
@@ -152,7 +152,7 @@
         }
         .solution {
             &__link-detail{
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 margin-bottom: 55px;
                 display: inline-block;
                 i {
@@ -186,7 +186,7 @@
                         color: #fff;
                         text-align: center;
                         line-height: (20/16);
-                        background-color: $brand-3forcom;
+                        background-color: $brand-Brickmate;
                         + span:before,
                         &:after {
                             content: "";
@@ -194,7 +194,7 @@
                             position: absolute;
                             left: 0;
                             border-style: solid;
-                            border-color: $brand-3forcom transparent;
+                            border-color: $brand-Brickmate transparent;
                         }
                         + span:before {
                             top: (10/16) * -1em;
@@ -598,7 +598,7 @@
                 height: (75/36) * 1em;
                 line-height: (75/36) * 1em;
                 border-radius: 50%;
-                background-color: $brand-3forcom;
+                background-color: $brand-Brickmate;
                 text-align: center;
                 font-size: (36/18) * 1em;
                 color: #fff;
@@ -666,7 +666,7 @@
             &:before {
                 content: "\e052";
                 font-family: 'ElegantIcons';
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 font-size: (20/18)*1em;
                 position: absolute;
                 top: (1/20)*1em;

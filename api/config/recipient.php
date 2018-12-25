@@ -2,12 +2,12 @@
 
 return [
     'group_1' => [
-        'wook@brickmate.kr', 'binhnt@3forcom.com', 'nhutbm@3forcom.com'
+        'wook@brickmate.kr', 'binhnt@Brickmate.com', 'nhutbm@Brickmate.com'
     ],
     'group_2' => [
-        'wook@brickmate.kr', 'binhnt@3forcom.com', 'nhutbm@3forcom.com', 'yenpham@3forcom.com'
+        'wook@brickmate.kr', 'binhnt@Brickmate.com', 'nhutbm@Brickmate.com', 'yenpham@Brickmate.com'
     ],
     'group_test' => [
-        'quanvo@3forcom.com'
+        'quanvo@Brickmate.com'
     ]
 ];

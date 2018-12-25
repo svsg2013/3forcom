@@ -62,11 +62,11 @@
                         left: 0;
                         right: 100%;
                         bottom: 0;
-                        background-color: $brand-3forcom;
+                        background-color: $brand-Brickmate;
                         @include transition(all 0.2s ease-in-out);
                     }
                     &:hover {
-                        color: $brand-3forcom;
+                        color: $brand-Brickmate;
                     }
                 }
                 > ul.sub {
@@ -89,11 +89,11 @@
                             color: $text-color;
                             white-space: nowrap;
                             &:hover {
-                                color: $brand-3forcom;
+                                color: $brand-Brickmate;
                             }
                         }
                         &.active a{
-                            color: $brand-3forcom;
+                            color: $brand-Brickmate;
                         }
                     }
                 }
@@ -110,7 +110,7 @@
                 &.active {
                     > a {
                         background: none;
-                        color: $brand-3forcom;
+                        color: $brand-Brickmate;
                         &:before {
                             right: 0;
                         }
@@ -130,7 +130,7 @@
         &__submit{
             height: 40px;
             line-height: 40px;
-            background-color: $brand-3forcom;
+            background-color: $brand-Brickmate;
             color: #fff;
             font-size: (16/14)*1em;
             padding: 0 15px;
@@ -207,7 +207,7 @@
                     @include translate(0, 0);
                 }
                 > .btn {
-                    color: $brand-3forcom;
+                    color: $brand-Brickmate;
                 }
             }
             
@@ -238,7 +238,7 @@
             }
             &:hover {
                 > span {
-                    background-color: $brand-3forcom;
+                    background-color: $brand-Brickmate;
                 }
             }
             &.active {

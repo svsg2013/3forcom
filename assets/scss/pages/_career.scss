@@ -28,7 +28,7 @@
                 z-index: 1;
                 font-size: (83/14) * 1em;
                 font-weight: 700;
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 padding-top: (35/83) * 1em;
             }
         }
@@ -37,12 +37,12 @@
             line-height: (24/14);
             padding: (11/14) * 1em (34/14)*1em;
             text-transform: uppercase;
-            background-color: $brand-3forcom;
+            background-color: $brand-Brickmate;
             color: #fff;
             border-radius: 25px;
             &:hover {
                 background-color: #fff;
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
             }
         }
         &__title {
@@ -144,7 +144,7 @@
             }
             h2 {
                 font-size: (30/14) * 1em;
-                color: $brand-3forcom;
+                color: $brand-Brickmate;
                 margin: 0 0 1em;
                 font-weight: 400;
             }
@@ -260,7 +260,7 @@
                 max-width: (185/375) * 100%;
                 @include translate(0, -50%);
                 &:hover {
-                    color: $brand-3forcom;
+                    color: $brand-Brickmate;
                 }
                 span {
                     display: block;
@@ -339,7 +339,7 @@
                         &::before {
                             content: "▶";
                             display: block;
-                            color: $brand-3forcom;
+                            color: $brand-Brickmate;
                             position: absolute;
                             top: -2px;
                             left: 0;
@@ -352,7 +352,7 @@
                 a {
                     display: inline-block;
                     margin-top: 20px;
-                    color: $brand-3forcom;
+                    color: $brand-Brickmate;
                     i {
                         margin-right: 10px;
                     }
@@ -445,7 +445,7 @@
             position: absolute;
             top: 0;
             left: 15px;
-            color: $brand-3forcom;
+            color: $brand-Brickmate;
             font-weight: 300;
             &::before {
                 content: "\e08c";
@@ -500,13 +500,13 @@
                 width: 90px;
                 height: 1px;
                 margin: 28px auto 0;
-                background-color: $brand-3forcom;
+                background-color: $brand-Brickmate;
             }
         }
         &__head {
             margin: 0 0 15px;
             font-weight: 700;
-            color: $brand-3forcom;
+            color: $brand-Brickmate;
             line-height: (25/14);
             font-size: 1em;
             text-transform: uppercase;
@@ -555,7 +555,7 @@
         }
     }
 
-// Joining 3Forcom ----------------------------------------------------
+// Joining Brickmate ----------------------------------------------------
     .section-joiningFearture {
         padding-bottom: (75/14)*1em;
         h3 {
@@ -625,10 +625,10 @@
                         &:checked {
                             + span {
                                 &:before {
-                                    border-color: $brand-3forcom;
+                                    border-color: $brand-Brickmate;
                                 }
                                 &:after {
-                                    background-color: $brand-3forcom;
+                                    background-color: $brand-Brickmate;
                                 }
                             }
                         }

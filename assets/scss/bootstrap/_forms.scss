@@ -158,8 +158,8 @@ output {
   // [converter] extracted textarea& to textarea.form-control
 
   &:hover {
-    border-color: $brand-3forcom;
-    color:  $brand-3forcom;
+    border-color: $brand-Brickmate;
+    color:  $brand-Brickmate;
   }
 }
 
@@ -435,7 +435,7 @@ input[type="checkbox"] {
   @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
 }
 .has-error {
-  @include form-control-validation($brand-3forcom, $brand-3forcom, $state-danger-bg);
+  @include form-control-validation($brand-Brickmate, $brand-Brickmate, $state-danger-bg);
 }
 
 // Reposition feedback icon if input has visible label above

@@ -1,5 +1,5 @@
 var config = {
-    'apiUrl': 'http://3forcom.local/api/public',
+    'apiUrl': 'http://Brickmate.local/api/public',
     'route': {
         'contact': '/send/contact'
     }

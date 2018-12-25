@@ -151,8 +151,8 @@
         }
     }
     &__btn {
-        background-color: $brand-3forcom;
-        border-color: $brand-3forcom;
+        background-color: $brand-Brickmate;
+        border-color: $brand-Brickmate;
         text-transform: uppercase;
         font-weight: 500;
         &:hover {
@@ -173,7 +173,7 @@
             margin: 0 auto;
             font-size: (30/14)*1em;
             font-weight: 300;
-            color: $brand-3forcom;
+            color: $brand-Brickmate;
             + p {
                 margin-top: (40/14)*1em;
             }
@@ -186,7 +186,7 @@
     background-color: #f1f1f1;
     &__title {
         font-size: (24/14)*1em;
-        color: $brand-3forcom;
+        color: $brand-Brickmate;
         text-transform: uppercase;
         font-weight: 600;
         line-height: 1;

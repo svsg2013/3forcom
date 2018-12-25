@@ -13,7 +13,7 @@
         border-radius: 4px;
         padding: 14px 27px;
         font-size: (16/14) * 1em;
-        color: $brand-3forcom;
+        color: $brand-Brickmate;
         font-weight: 400;
         width: 570px;
         outline: none !important;
@@ -23,7 +23,7 @@
     &__btn {
         text-transform: uppercase;
         padding: 15px 25px;
-        background-color: $brand-3forcom;
+        background-color: $brand-Brickmate;
         color: #fff;
         border-radius: 25px;
         border: none;
@@ -31,7 +31,7 @@
         margin-left: 30px;
         @include transition(all 0.2s ease-in-out);
         &:hover {
-            background-color: darken($brand-3forcom, 10%);
+            background-color: darken($brand-Brickmate, 10%);
         }
     }
 }
@@ -212,7 +212,7 @@
                             display: block;
                             padding: $paddingLink (40/18) * 1em $paddingLink (62/18) * 1em;
                             position: relative;
-                            color: $brand-3forcom;
+                            color: $brand-Brickmate;
                             &:before {
                                 content: "Q";
                                 position: absolute;
@@ -225,7 +225,7 @@
                                 text-align: center;
                                 line-height: (45/18) * 1em;
                                 font-weight: 400;
-                                background-color: $brand-3forcom;
+                                background-color: $brand-Brickmate;
                                 color: #fff;
                                 @include transition(all 0.2s ease-in-out);
                             }
@@ -241,13 +241,13 @@
                                 line-height: (45/18) * 1em;;
                                 text-align: center;
                                 font-size: (16/18) * 1em;
-                                color: $brand-3forcom;
+                                color: $brand-Brickmate;
                             }
                             &.collapsed {
                                 font-weight: 300;
                                 color: #333;
                                 &:before {
-                                    color:  $brand-3forcom;
+                                    color:  $brand-Brickmate;
                                     background-color: #e3e3e3;
                                 }
                                 &:after {
