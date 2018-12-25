@@ -10,7 +10,7 @@
 <body>
 <div style="background-color: #fafafa;">
     <div>
-        <p>We have received one contact message via "Opening Vacancies" form on website <a href="http://Brickmate.com" target="_blank" title="Brickmate.com">Brickmate.com</a></p>
+        <p>We have received one contact message via "Opening Vacancies" form on website <a href="http://brickmate.kr" target="_blank" title="brickmate.kr">brickmate.kr</a></p>
         
         <p>Please find details below:</p>
 
