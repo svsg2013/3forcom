@@ -681,7 +681,7 @@ if ($('#careerDetail__form').length) {
             var self = this;
             // config
             self.options.addRemoveLinks = true;
-            self.options.dictRemoveFile = "Delete";
+            self.options.dictRemoveFile = "삭제";
             //New file added
             self.on("addedfile", function (file) {
                 console.log('new file added ', file);

@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'lethanhtdt@gmail.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'noreply@brickmate.kr'),
         'name' => env('MAIL_FROM_NAME', 'Brickmate Customer Service'),
     ],
 
@@ -84,7 +84,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'lethanhtdt@gmail.com'),
+    'username' => env('MAIL_USERNAME', 'noreply@brickmate.kr'),
 
     'password' => env('MAIL_PASSWORD', 'Brickmatemaugiau@1234'),
 
