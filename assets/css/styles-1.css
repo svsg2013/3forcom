@@ -13344,8 +13344,9 @@ body.loading .fc-loading {
 }
 
 .fc-loading__3fc {
-    width: 49px;
-    height: 69px;
+    /*width: 49px;*/
+    widows: 125px;
+    /*height: 69px;*/
     position: absolute;
     top: 50%;
     left: 50%;
