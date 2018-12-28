@@ -28,83 +28,76 @@
 </head>
 
 <body class="sticky-head">
-    <header class="header navbar" id="top" data-spy="affix" data-offset-top="80">
-        <div class="header__left">
-            <a class="header__logo" href="/" class="navbar-brand" title="Brickmate"><img src="/assets/images/logo.svg" alt="brickmate.kr"></a>
+<header class="header navbar" id="top" data-spy="affix" data-offset-top="80">
+    <div class="header__left">
+        <a class="header__logo" href="/" class="navbar-brand" title="brickmate"><img src="/assets/images/logo-brickmate.svg"
+                                                                                     width="169" height="54" alt="brickmate.kr"></a>
+    </div>
+    <!--Nav Header-->
+    <nav class="header__right">
+        <ul class="nav">
+            <li class="hasChild active"><a href="/">홈</a></li>
+            <li class="hasChild">
+                <a href="/about" target="">About Us</a>
+            </li>
+            <li class="hasChild">
+                <a href="/solutions">솔루션</a>
+                <ul class="sub">
+                    <li><a href="/solutions/mobile-application">모바일 어플리케이션</a></li>
+                    <li><a href="/solutions/website-microsite">웹사이트 & 마이크로사이트</a></li>
+                    <li><a href="/solutions/ecommerce">전자상거래</a></li>
+                    <li><a href="/solutions/dedicated-development-team">열정적인 개발팀</a></li>
+                    <li><a href="/solutions/business-application">비즈니스 어플리케이션</a></li>
+                    <li><a href="/solutions/system-maintenance">시스템 유지 보수</a></li>
+                </ul>
+            </li>
+            <li class="hasChild"><a href="/services">서비스</a>
+                <ul class="sub">
+                    <li><a href="/services/cross-platform-app-development">크로스 플랫폼 어플리케이션 개발</a></li>
+                    <li><a href="/services/ios-android-development">IOS & Android 개발</a></li>
+                    <li><a href="/services/web-development">웹 개발</a></li>
+                    <li><a href="/services/agile-development">애자일 개발</a></li>
+                    <li><a href="/services/technical-consulting">기술 컨설팅</a></li>
+                    <li><a href="/services/ux-ui-design">UX & UI 디자인</a></li>
+                    <li><a href="/services/search-engine-optimizing">검색 엔진 최적화</a></li>
+
+                </ul>
+            </li>
+            <li class="hasChild">
+                <a href="/works" target="">포트폴리오</a>
+            </li>
+            <li class="hasChild">
+                <a href="/careers/opening-vacancies">팀원 모집</a>
+            </li>
+            <li class="hasChild">
+                <a href="/careers/consultants-network">제휴 신청</a>
+            </li>
+            <li class="hasChild">
+                <a href="/contact">고객센터</a>
+                <ul class="sub">
+                    <li><a href="/contact">일반 문의 및 제휴</a></li>
+                    <li><a href="/contact/submit-your-rfp">프로젝트 의뢰하기</a></li>
+                    <li><a href="/contact/request-for-a-team">전담 개발팀 구축 요청</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- / nav -->
+        <div class="header__tools">
+            <a href="/contact/submit-your-rfp" class="header__tools__submit btn btn">프로젝트 의뢰하기</a>
+            <form action="" class="header__tools__search dropdown">
+                <a class="btn dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="icon_search"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownSearch">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn"><i class="icon_search"></i></button>
+                </div>
+            </form>
+            <a href="#" class="header__tools__menu"><span></span><span></span><span></span><span></span></a>
         </div>
-        <!--Nav Header-->
-        <nav class="header__right">
-            <ul class="nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li class="hasChild">
-                    <a href="/solutions">Solutions</a>
-                    <ul class="sub">
-                        <li><a href="/solutions/mobile-application">Mobile Application</a></li>
-                        <li><a href="/solutions/website-microsite">Website & Microsite</a></li>
-                        <li><a href="/solutions/ecommerce">eCommerce</a></li>
-                        <li><a href="/solutions/dedicated-development-team">Dedicated Development Team</a></li>
-                        <li><a href="/solutions/business-application">Business Application</a></li>
-                        <li><a href="/solutions/system-maintenance">System Maintenance</a></li>
-                    </ul>
-                </li>
-                <li class="hasChild"><a href="/services">Services</a>
-                    <ul class="sub">
-                        <li><a href="/services/cross-platform-app-development">Cross-platform App Development</a></li>
-                        <li><a href="/services/ios-android-development">IOS & Android Development</a></li>
-                        <li><a href="/services/web-development">Web Development</a></li>
-                        <li><a href="/services/agile-development">Agile Development</a></li>
-                        <li><a href="/services/technical-consulting">Technical Consulting</a></li>
-                        <li><a href="/services/ux-ui-design">UX & UI Design</a></li>
-                        <li><a href="/services/search-engine-optimizing">Search Engine Optimizing</a></li>
-
-                    </ul>
-                </li>
-                <li class="hasChild">
-                    <a href="/works" target="">Works</a>
-                </li>
-                <li class="hasChild">
-                    <a href="/about" target="">About</a>
-                    <ul class="sub">
-
-                        <li><a href="/about/our-clientele">Our Clientele</a></li>
-                        <li><a href="/about/faqs">FAQs</a></li>
-                    </ul>
-                </li>
-                <li class="hasChild">
-                    <a href="/careers">Careers</a>
-                    <ul class="sub">
-
-                        <li><a href="/careers/opening-vacancies">Opening Vacancies</a></li>
-                        <li><a href="/careers/consultants-network">Consultants Network</a></li>
-
-                    </ul>
-                </li>
-                <li class="hasChild">
-                    <a href="/contact">Contact</a>
-                    <ul class="sub">
-                        <li><a href="/contact">General Contact</a></li>
-                        <li><a href="/contact/submit-your-rfp">Submit Your RFP</a></li>
-                        <li><a href="/contact/request-for-a-team">Request for a Team</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- / nav -->
-            <div class="header__tools">
-                <a href="/contact/submit-your-rfp" class="header__tools__submit btn btn">Submit RFP</a>
-                <form action="" class="header__tools__search dropdown">
-                    <a class="btn dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <i class="icon_search"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownSearch">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button class="btn"><i class="icon_search"></i></button>
-                    </div>
-                </form>
-                <a href="#" class="header__tools__menu"><span></span><span></span><span></span><span></span></a>
-            </div>
-        </nav>
-        <!--/ main menu-->
-    </header>
+    </nav>
+    <!--/ main menu-->
+</header>
     <!--/ header-->
     <div class="main">
         <!-- <section id="fof" class="error404">
@@ -121,149 +114,130 @@
                     <h1 class="heading__title"><span><strong>4</strong></span><span><strong>0</strong></span><span><strong>4</strong></span></h1>
                 </div>
                 <div class="heading heading--gradient--1 heading--divider">
-                    <h2><span class="heading__title">WHAT ARE YOU LOOKING FOR?</span></h2>
-                    <p class="heading__desc">The info you are looking for may be taken away, go to <a href="/">home page</a> or <a href="/contact">contact us</a>?</p>
+                    <h2><span class="heading__title">무엇을 찾고 계신가요?</span></h2>
+                    <p class="heading__desc"><a href="/">홈</a>페이지로 다시 돌아가거나 <a href="/contact">고객센터</a>로 문의 주시길 바랍니다.</p>
                 </div>
             </div>
         </section>
     </div>
     <!--/ main-->
-    <section class="bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h2 class="bottom__title">Solution</h2>
-                    <ul class="bottom__menu">
-                        <li><a href="/solutions/mobile-application">Mobile Application</a></li>
-                        <li><a href="/solutions/website-microsite">Website & Microsite</a></li>
-                        <li><a href="/solutions/ecommerce">eCommerce</a></li>
-                        <li><a href="/solutions/dedicated-development-team">Dedicated Development Team</a></li>
-                        <li><a href="/solutions/business-application">Business Application</a></li>
-                        <li><a href="/solutions/system-maintenance">System Maintenance</a></li>
+    <section class="bottom ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-1"></div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-1 ">
+                    <h2 class="bottom__title ">About Us</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 ">
+                    <h2 class="bottom__title ">솔루션</h2>
+                    <ul class="bottom__menu ">
+                        <li><a href="/solutions/mobile-application">모바일 어플리케이션</a></li>
+                        <li><a href="/solutions/website-microsite">웹사이트 & 마이크로사이트</a></li>
+                        <li><a href="/solutions/ecommerce">전자상거래</a></li>
+                        <li><a href="/solutions/dedicated-development-team">열정적인 개발팀</a></li>
+                        <li><a href="/solutions/business-application">비즈니스 어플리케이션</a></li>
+                        <li><a href="/solutions/system-maintenance">시스템 유지 보수</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h2 class="bottom__title">Services</h2>
-                    <ul class="bottom__menu">
-                        <li><a href="/services/cross-platform-app-development">Cross-platform App Development</a></li>
-                        <li><a href="/services/ios-android-development">IOS & Android Development</a></li>
-                        <li><a href="/services/web-development">Web Development</a></li>
-                        <li><a href="/services/agile-development">Agile Development</a></li>
-                        <li><a href="/services/technical-consulting">Technical Consulting</a></li>
-                        <li><a href="/services/ux-ui-design">UX & UI Design</a></li>
-                        <li><a href="/services/search-engine-optimizing">Search Engine Optimizing</a></li>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 ">
+                    <h2 class="bottom__title ">서비스</h2>
+                    <ul class="bottom__menu ">
+                        <li><a href="/services/cross-platform-app-development">크로스 플랫폼 어플리케이션 개발</a></li>
+                        <li><a href="/services/ios-android-development">IOS & Android 개발</a></li>
+                        <li><a href="/services/web-development">웹 개발</a></li>
+                        <li><a href="/services/agile-development">애자일 개발</a></li>
+                        <li><a href="/services/technical-consulting">기술 컨설팅</a></li>
+                        <li><a href="/services/ux-ui-design">UX & UI 디자인</a></li>
+                        <li><a href="/services/search-engine-optimizing">검색 엔진 최적화</a></li>
 
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h2 class="bottom__title">Works</h2>
-                    <ul class="bottom__menu">
-
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-1 ">
+                    <h2 class="bottom__title ">포트폴리오</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-1 col-lg-1 ">
+                    <h2 class="bottom__title ">팀원 모집</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-1 col-lg-1 ">
+                    <h2 class="bottom__title ">제휴 신청</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 ">
+                    <h2 class="bottom__title ">고객센터</h2>
+                    <ul class="bottom__menu ">
+                        <li><a href="/contact">일반 문의 및 제휴</a></li>
+                        <li><a href="/contact/submit-your-rfp">프로젝트 의뢰하기</a></li>
+                        <li><a href="/contact/request-for-a-team">전담 개발팀 구축 요청</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h2 class="bottom__title">About</h2>
-                    <ul class="bottom__menu">
-
-                        <li><a href="/about/our-clientele">Our Clientele</a></li>
-                        <li><a href="/about/faqs">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h2 class="bottom__title">Careers</h2>
-                    <ul class="bottom__menu">
-
-                        <li><a href="/careers/opening-vacancies">Opening Vacancies</a></li>
-                        <li><a href="/careers/consultants-network">Consultants Network</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h2 class="bottom__title">Contact</h2>
-                    <ul class="bottom__menu">
-                        <li><a href="/contact">General Contact</a></li>
-                        <li><a href="/contact/submit-your-rfp">Submit Your RFP</a></li>
-                        <li><a href="/contact/request-for-a-team">Request for a Team</a></li>
-                    </ul>
-                </div>
+                <div class="col-lg-1"></div>
             </div>
         </div>
     </section>
     <!-- / bottom -->
     <footer class="footer">
-        <a href="tel:+842822299097" class="footer__call"><i class="icon_phone"></i></a>
+        <a href="tel:+827080646727" class="footer__call"><i class="icon_phone"></i></a>
         <div class="container">
             <div class="footer__contact">
                 <ul>
-                    <li><i class="icon_building"></i> 854 Su Van Hanh Street, Ward 13, District 10, Seoul</li>
+                    <li><i class="icon_building"></i> Seoul Office_ 7F, 398, Seocho-daero, Seocho-gu, Seoul, Republic of Korea</li>
                     <li><i class="icon_mail"></i> <a href="mailto:wook@brickmate.kr">wook@brickmate.kr</a></li>
-                    <li><i class="icon_phone"></i> <a href="tel:+842822299097">|+84| 28 22299097</a> or <a href="tel:+842822299095">|+84| 28 22299095</a></li>
+                    <li><i class="icon_phone"></i>  <a href="tel:+827076659590">|+82|
+                        70-8064-6727</a></li>
                 </ul>
-            </div>
-            <div class="footer__social">
-                <!-- <p>We created this website in 2017</p> -->
-                <a href="https://www.facebook.com/Brickmate/" class="social_facebook" target="_bank"></a>
-                <a href="https://www.linkedin.com/company/2289432/" class="social_linkedin" target="_bank"></a>
-                <a href="mailto:wook@brickmate.kr" class="icon_mail"></a>
             </div>
         </div>
     </footer>
     <!--/ footer-->
 
-    <div class="slideMenu">
-        <div class="slideMenu__inner">
-            <ul class="slideMenu__nav">
-                <li class="hasChild">
-                    <a href="/solutions">Solutions</a>
-                    <ul class="sub">
-                        <li><a href="/solutions/mobile-application">Mobile Application</a></li>
-                        <li><a href="/solutions/website-microsite">Website & Microsite</a></li>
-                        <li><a href="/solutions/ecommerce">eCommerce</a></li>
-                        <li><a href="/solutions/dedicated-development-team">Dedicated Development Team</a></li>
-                        <li><a href="/solutions/business-application">Business Application</a></li>
-                        <li><a href="/solutions/system-maintenance">System Maintenance</a></li>
-                    </ul>
-                </li>
-                <li class="hasChild"><a href="/services">Services</a>
-                    <ul class="sub">
-                        <li><a href="/services/cross-platform-app-development">Cross-platform App Development</a></li>
-                        <li><a href="/services/ios-android-development">IOS & Android Development</a></li>
-                        <li><a href="/services/web-development">Web Development</a></li>
-                        <li><a href="/services/agile-development">Agile Development</a></li>
-                        <li><a href="/services/technical-consulting">Technical Consulting</a></li>
-                        <li><a href="/services/ux-ui-design">UX & UI Design</a></li>
-                        <li><a href="/services/search-engine-optimizing">Search Engine Optimizing</a></li>
+<div class="slideMenu ">
+    <div class="slideMenu__inner ">
+        <ul class="slideMenu__nav ">
+            <li class="hasChild ">
+                <a href="/about " target=" ">About US</a>
+            </li>
+            <li class="hasChild ">
+                <a href="/solutions ">솔루션</a>
+                <ul class="sub ">
+                    <li><a href="/solutions/mobile-application">모바일 어플리케이션</a></li>
+                    <li><a href="/solutions/website-microsite">웹사이트 & 마이크로사이트</a></li>
+                    <li><a href="/solutions/ecommerce">전자상거래</a></li>
+                    <li><a href="/solutions/dedicated-development-team">열정적인 개발팀</a></li>
+                    <li><a href="/solutions/business-application">비즈니스 어플리케이션</a></li>
+                    <li><a href="/solutions/system-maintenance">시스템 유지 보수</a></li>
+                </ul>
+            </li>
+            <li class="hasChild "><a href="/services ">서비스</a>
+                <ul class="sub ">
+                    <li><a href="/services/cross-platform-app-development">크로스 플랫폼 어플리케이션 개발</a></li>
+                    <li><a href="/services/ios-android-development">IOS & Android 개발</a></li>
+                    <li><a href="/services/web-development">웹 개발</a></li>
+                    <li><a href="/services/agile-development">애자일 개발</a></li>
+                    <li><a href="/services/technical-consulting">기술 컨설팅</a></li>
+                    <li><a href="/services/ux-ui-design">UX & UI 디자인</a></li>
+                    <li><a href="/services/search-engine-optimizing">검색 엔진 최적화</a></li>
 
-                    </ul>
-                </li>
-                <li>
-                    <a href="/works" target="">Works</a>
-                </li>
-                <li class="hasChild">
-                    <a href="/about" target="">About</a>
-                    <ul class="sub">
-                        <li><a href="/about/our-clientele">Our Clientele</a></li>
-                        <li><a href="/about/faqs">FAQs</a></li>
-                    </ul>
-                </li>
-                <li class="hasChild">
-                    <a href="/careers">Careers</a>
-                    <ul class="sub">
-                        <li><a href="/careers/opening-vacancies">Opening Vacancies</a></li>
-                        <li><a href="/careers/consultants-network">Consultants Network</a></li>
-                    </ul>
-                </li>
-                <li class="hasChild">
-                    <a href="/contact">Contact</a>
-                    <ul class="sub">
-                        <li><a href="/contact">General Contact</a></li>
-                        <li><a href="/contact/submit-your-rfp">Submit Your RFP</a></li>
-                        <li><a href="/contact/request-for-a-team">Request for a Team</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+                </ul>
+            </li>
+            <li class="hasChild ">
+                <a href="/works " target=" ">포트폴리오</a>
+            </li>
+            <li class="hasChild ">
+                <a href="/careers/opening-vacancies">팀원 모집</a>
+            </li>
+            <li class="hasChild ">
+                <a href="/careers/consultants-network">제휴 신청</a>
+            </li>
+            <li class="hasChild ">
+                <a href="/contact ">고객센터</a>
+                <ul class="sub ">
+                    <li><a href="/contact">일반 문의 및 제휴</a></li>
+                    <li><a href="/contact/submit-your-rfp">프로젝트 의뢰하기</a></li>
+                    <li><a href="/contact/request-for-a-team">전담 개발팀 구축 요청</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
+</div>
     <!-- / slide Menu -->
 
 
@@ -289,7 +263,7 @@
 
     <div class="fc-loading">
         <div class="fc-loading__3fc">
-            <img src="assets/images/icons/loader.gif" alt="loader">
+            <img src="/assets/images/icons/loader.gif" alt="loader">
         </div>
     </div>
     <!-- / loading -->
