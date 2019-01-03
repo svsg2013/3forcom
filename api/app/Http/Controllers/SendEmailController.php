@@ -31,7 +31,7 @@ class SendEmailController extends Controller
         $input  = $request->except('file', 'type');
 
         //dd($request->all());
-        
+
         $path = '';
         //Upload file
         if($file) {
@@ -70,12 +70,12 @@ class SendEmailController extends Controller
             case 'contact':
                 //Store in database
                 Contact::create($data);
-                
+
                 //Send mail
                 $email_receiver = config('recipient.group_1');
                 $result = Mail::send('emails.contact_email', compact('data'), function ($message) use ($email_receiver) {
                     $message->to($email_receiver)
-                        ->subject("Contact message received at " . date('H:i d:m:Y'));
+                        ->subject("[제안요청서-홈페이지] " . date("Y-m-d H:i"));
                 });
                 break;
             case 'your_rfp':
@@ -96,7 +96,7 @@ class SendEmailController extends Controller
                     'business-application' => 'Business Application',
                     'system-maintenance' => '',
                 ];*/
-                
+
                 //Send mail
                 $email_receiver = config('recipient.group_1');
                 $result = Mail::send('emails.your_rfp', compact('data'), function ($message) use ($email_receiver, $path) {
@@ -104,7 +104,7 @@ class SendEmailController extends Controller
                         $message = $message->attach($path->getPathName());
                     }
                     $message->to($email_receiver)
-                        ->subject("\"Submit your RFP\" message received at " . date('H:i d:m:Y'));
+                        ->subject("\"Submit your RFP\" message received at " . date("Y-m-d H:i"));
                 });
                 break;
 
@@ -114,7 +114,7 @@ class SendEmailController extends Controller
                     $data['cv'] = $type . '/' . $path->getFileName();
                 }
                 Vacancies::create($data);
-                
+
                 //Send mail
                 $email_receiver = config('recipient.group_2');
                 $result = Mail::send('emails.vacancies', compact('data'), function ($message) use ($email_receiver, $path) {
@@ -122,33 +122,33 @@ class SendEmailController extends Controller
                         $message = $message->attach($path->getPathName());
                     }
                     $message->to($email_receiver)
-                        ->subject("\"Opening Vacancies\" message received at " . date('H:i d:m:Y'));
+                        ->subject("\"Opening Vacancies\" message received at " . date("Y-m-d H:i"));
                 });
                 break;
-            
+
             case 'request_team':
                 //Store in database
                 RequestTeam::create($data);
-                
+
                 //Send mail
                 $email_receiver = config('recipient.group_1');
                 $result = Mail::send('emails.request_team', compact('data'), function ($message) use ($email_receiver) {
                     $message->to($email_receiver)
-                        ->subject("\"Send us your request\" message received at " . date('H:i d:m:Y'));
+                        ->subject("\"Send us your request\" message received at " . date("Y-m-d H:i"));
                 });
                 break;
-            
+
             case 'consultants_network':
                 //Store in database
                 ConsultantsNetwork::create($data);
-                
+
                 //Send mail
                 $email_receiver = config('recipient.group_1');
                 $result = Mail::send('emails.consultants_network', compact('data'), function ($message) use ($email_receiver) {
                     $message->to($email_receiver)
-                        ->subject("\"Join our consultants network now\" message received at " . date('H:i d:m:Y'));
+                        ->subject("\"Join our consultants network now\" message received at " . date("Y-m-d H:i"));
                 });
-                break;    
+                break;
 
             default:
                 return true;
@@ -161,7 +161,7 @@ class SendEmailController extends Controller
         if (! is_dir($destinationPath)) {
             mkdir($destinationPath, 0777);
         }
-        
+
         //Re name
         //$fileType 			= $file->getMimeType();
         $fileOriginalName   = $file->getClientOriginalName();
